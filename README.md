@@ -27,7 +27,7 @@ The analysis of the election show that:
     - Diana DeGette
     - Raymon Anthony Doane
     
--The candidate results were:
+- The candidate results were:
     - Charles Casper Stockham received 23.0% of the total vote, 85,213 votes
     - Diana DeGette received 73.8% of the total vote, 272.892 votes
     - Raymon Anthony Doane received 3.1% of the total vote, 11,606 votes
@@ -52,7 +52,7 @@ analysis.
   
    - f"-------------------------\nLargest residential district Turnout: {winning_county}\n-------------------------\n"
   
-   Even though the script will run without modification of the variable names it would be good to change the names of the variables to reflect the new purpose. 
+   Even though the script will run without modification of the variable names it would be good to change the names of these as well to reflect the new purpose. 
    
 -  Another example would be to modify the script slighlty to pull data source files that are in a different format, for example an excel file or url.
    This part of the script that imports and reads the file would need to be adjusted:
