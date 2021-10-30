@@ -1,7 +1,7 @@
 # Election_Analysis
 
 ## Project Overview
-
+***
 A Colorado Board of Elections employee has asked us to complete the election audit of a recent local congressional election by performing the following tasks:
 
 1. Calculate the total number of votes cast.
@@ -18,7 +18,7 @@ A Colorado Board of Elections employee has asked us to complete the election aud
 
 
 ## Election- Audit Results
-
+***
 The analysis of the election show that:
 
 - There were 369.711 votes cast in the election
@@ -29,15 +29,15 @@ The analysis of the election show that:
     
 - The candidate results were:
     - Charles Casper Stockham received 23.0% of the total vote, 85,213 votes
-    - Diana DeGette received 73.8% of the total vote, 272.892 votes
+    - Diana DeGette received 73.8% of the total vote, 272,892 votes
     - Raymon Anthony Doane received 3.1% of the total vote, 11,606 votes
        
-The winner of the election was:
+- The winner of the election was:
 
-Diana DeGette was the winner of the election. She received 73.8% of the vote and 272.892 votes.
+    - Diana DeGette was the winner of the election. She received 73.8% of the vote and 272,892 votes.
 
 # Election-Audit Summary
-
+***
 This script can be reused to analyse any other election that determines the winner by popular vote. 
 In order for the script to work correctly the source code needs to be in the same order as the csv file in this 
 analysis. 
@@ -57,11 +57,9 @@ analysis.
 -  Another example would be to modify the script slighlty to pull data source files that are in a different format, for example an excel file or url.
    This part of the script that imports and reads the file would need to be adjusted:
   
-    # Add our dependencies.
     import csv
     import os
 
-    # Add a variable to load a file from a path.
     file_to_load = os.path.join("Resources", "election_results.csv")
   
 -  The script could also be used to predict the outcome of elections by using forecast numbers in the data source file. 
