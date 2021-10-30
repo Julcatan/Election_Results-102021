@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A Colorado Board of Elections employee has given us the following tasks to complete the election audit of a recent local congressional election by performing the following tasks:
+A Colorado Board of Elections employee has requested to complete the election audit of a recent local congressional election by performing the following tasks:
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of votes each candidate received.
@@ -39,15 +39,23 @@ Diana DeGette was the winner of the election. She received 73.8% of the vote and
 # Election-Audit Summary
 
 This script can be reused to analyse any other election that determines the winner by popular vote. 
-
- - In order for the script to work correctly the source code needs to be in the same order as the csv file in this 
-   analysis. 
+In order for the script to work correctly the source code needs to be in the same order as the csv file in this 
+analysis. 
 
  - As an example you could use the script to analyse a local election for city commision.
-   The data in the current county column would have to be replaced with the city residential districts.
- 
-- Another example would be to modify the script slighlty to pull data source files that are in a different format, for eexample a url or an excel file.
-  This part of the script that imports and reads the file would need to be adjusted:
+   The data in the current county column would have to be replaced with the city's residential districts.
+   All print statements that refer to "county" need to be modified, for example:
+   
+   - f"-------------------------\nLargest County Turnout: {winning_county}\n-------------------------\n"
+  
+    would need to be changed to:
+  
+   - f"-------------------------\nLargest residential district Turnout: {winning_county}\n-------------------------\n"
+  
+   Even though the script will run without modification of the variable names it would be good to change the names of the variables to reflect the new purpose. 
+   
+-  Another example would be to modify the script slighlty to pull data source files that are in a different format, for example an excel file or url.
+   This part of the script that imports and reads the file would need to be adjusted:
   
     # Add our dependencies.
     import csv
@@ -56,9 +64,10 @@ This script can be reused to analyse any other election that determines the winn
     # Add a variable to load a file from a path.
     file_to_load = os.path.join("Resources", "election_results.csv")
   
-  
-  
+-  The script could also be used to predict the outcome of elections by using forecast numbers in the data source file. 
 
+-  If additional data gets added to the source file the script can be used to analyse them by reusing the existing code as a template. 
+   
     
 
 
