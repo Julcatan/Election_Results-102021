@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A Colorado Board of Elections employee has given us the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Elections employee has given us the following tasks to complete the election audit of a recent local congressional election by performing the following tasks:
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of votes each candidate received.
@@ -17,7 +17,7 @@ A Colorado Board of Elections employee has given us the following tasks to compl
 - Software: Python 3.6.1, Visual Studio Code, 1.38.1
 
 
-## Summary
+## Election- Audit Results
 
 The analysis of the election show that:
 
@@ -28,26 +28,37 @@ The analysis of the election show that:
     - Raymon Anthony Doane
     
 -The candidate results were:
-    - Charles Casper Stockham: 23,0% of the total vote, 85/
-    - Diana DeGette
-    - Raymon Anthony Doane
+    - Charles Casper Stockham received 23.0% of the total vote, 85,213 votes
+    - Diana DeGette received 73.8% of the total vote, 272.892 votes
+    - Raymon Anthony Doane received 3.1% of the total vote, 11,606 votes
        
-
-
-
-Candidate one receive x% of the vote and y number of votes
-,,
-,,
-
-
 The winner of the election was:
 
-Candidate, who received x% ofthe vote and y number of votes.
+Diana DeGette was the winner of the election. She received 73.8% of the vote and 272.892 votes.
 
-# Challenge Overview
+# Election-Audit Summary
 
+This script can be reused to analyse any other election that determines the winner by popular vote. 
 
+ - In order for the script to work correctly the source code needs to be in the same order as the csv file in this 
+   analysis. 
 
+ - As an example you could use the script to analyse a local election for city commision.
+   The data in the current county column would have to be replaced with the city residential districts.
+ 
+- Another example would be to modify the script slighlty to pull data source files that are in a different format, for eexample a url or an excel file.
+  This part of the script that imports and reads the file would need to be adjusted:
+  
+    # Add our dependencies.
+    import csv
+    import os
 
-# Challenge Summary
+    # Add a variable to load a file from a path.
+    file_to_load = os.path.join("Resources", "election_results.csv")
+  
+  
+  
+
+    
+
 
