@@ -28,9 +28,9 @@ The analysis of the election show that:
     - Raymon Anthony Doane
     
 - The candidate results were:
-    - Charles Casper Stockham received 23.0% of the total vote, 85,213 votes
-    - Diana DeGette received 73.8% of the total vote, 272,892 votes
-    - Raymon Anthony Doane received 3.1% of the total vote, 11,606 votes
+    - Charles Casper Stockham received 23.0% of the total vote, 85,213 votes.
+    - Diana DeGette received 73.8% of the total vote, 272,892 votes.
+    - Raymon Anthony Doane received 3.1% of the total vote, 11,606 votes.
        
 - The winner of the election was:
 
@@ -58,6 +58,7 @@ analysis.
    This part of the script that imports and reads the file would need to be adjusted:
   
     import csv
+    
     import os
 
     file_to_load = os.path.join("Resources", "election_results.csv")
