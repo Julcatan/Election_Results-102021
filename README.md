@@ -36,6 +36,11 @@ The analysis of the election show that:
 
     - Diana DeGette was the winner of the election. She received 73.8% of the vote and 272,892 votes.
 
+- The counties in the election were
+     - Denver
+     - Jefferson
+     - Arapahoe
+
 # Election-Audit Summary
 ***
 This script can be reused to analyse any other election that determines the winner by popular vote. 
